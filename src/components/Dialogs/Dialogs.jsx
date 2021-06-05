@@ -1,12 +1,39 @@
 import React from 'react';
-import style from './Header.module.css';
+import style from './Dialogs.module.css';
+import {NavLink} from "react-router-dom";
 
-const Header = () => {
+const Dialogs = () => {
     return (
-        <header className={style.header}>
-            <img src="https://static4.depositphotos.com/1020822/350/v/600/depositphotos_3501921-stock-illustration-photography-eye-logo.jpg"/>
-        </header>
+        <div>
+            <div className={style.dialogs}>
+                <div className={style.dialogsItems + '' + style.active}>
+                    <div className={style.dialog}>
+                        <NavLink to='/dialogs/1'>Света</NavLink>
+                    </div>
+                    <div className={style.dialog}>
+                        <NavLink to='/dialogs/2'>Света</NavLink>
+                    </div>
+                    <div className={style.dialog}>
+                        <NavLink to='/dialogs/3'>Света</NavLink>
+                    </div>
+                    <div className={style.dialog}>
+                        <NavLink to='/dialogs/4'>Света</NavLink>
+                    </div>
+                </div>
+                <div className={style.messages}>
+                    <div className={style.message}>
+                        Света
+                    </div>
+                    <div className={style.message}>
+                        Света
+                    </div>
+                    <div className={style.message}>
+                        Света
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 }
 
-export default Header;
+export default Dialogs;

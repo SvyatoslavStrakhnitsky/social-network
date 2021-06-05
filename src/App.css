@@ -7,21 +7,10 @@
   grid-template-columns: 2fr 10fr;
 }
 
-.header {
-  grid-area: header;
-  background-color: black;
-}
-
-.header img {
-  height: 50px;
-}
-
-.nav {
-  grid-area: nav;
-  background-color: yellow;
-}
-
-.content {
+.app-wrapper-content {
   grid-area: content;
   background-color: yellowgreen;
 }
+
+
+
